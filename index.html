@@ -270,6 +270,11 @@ footer a { color: var(--soft); }
 .cv-request p { color: var(--soft); margin-top: 10px; }
 .cv-request .cv-email { color: var(--ink); font-weight: 700; user-select: all; word-break: break-all; }
 .cv-request .actions { justify-content: center; margin-top: 18px; }
+.li-row { margin-top: 18px !important; opacity: 1 !important; }
+.li-link { display: inline-flex; align-items: center; gap: 10px; color: var(--paper); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid color-mix(in srgb, var(--paper) 50%, transparent); padding-bottom: 2px; }
+.li-link:hover { border-bottom-color: var(--paper); }
+.li-link:focus-visible { outline-color: var(--paper); }
+.foot-links { display: inline-flex; gap: 20px; }
 </style>
 
 </head>
@@ -611,6 +616,7 @@ footer a { color: var(--soft); }
         <span class="email" id="email">ad2465@cornell.edu</span>
         <button class="copy" id="copy-email" type="button">Copy email</button>
       </div>
+      <p class="li-row"><a class="li-link" href="https://www.linkedin.com/in/asma-darwish-663272197/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
     </div>
     <a class="btn" href="mailto:ad2465@cornell.edu?subject=R%C3%A9sum%C3%A9%20request">Request résumé</a>
   </div>
@@ -619,7 +625,7 @@ footer a { color: var(--soft); }
 <footer>
   <div class="wrap">
     <span>© 2026 Asma Darwish · Ithaca, NY</span>
-    <a href="#home">Back to home</a>
+    <span class="foot-links"><a href="https://www.linkedin.com/in/asma-darwish-663272197/" target="_blank" rel="noopener">LinkedIn</a><a href="#home">Back to home</a></span>
   </div>
 </footer>
 
